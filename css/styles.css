@@ -1,0 +1,496 @@
+#main_page {
+  background: black;
+}
+
+#footer{
+  padding-top: 1.5%;
+  background: linear-gradient(to top, rgba(255,0,0,0.3), rgba(0,0,0,0.8));
+  height: 55px;
+  text-align: center;
+  color: grey;
+}
+
+a {
+  color: inherit;
+}
+a:hover {
+  color: crimson;
+}
+/* NAVIGATION BAR */
+.navbar {
+
+  padding: 0;
+  background: linear-gradient(to bottom, rgba(255,0,0,0.3), rgba(0,0,0,0.8));
+
+}
+.navbar .navbar-nav{
+  float: none;
+
+}
+span {
+  color: crimson;
+  font-weight: 900;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.nav-link {
+  font-size: 2rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+/* Carousel Buttons */
+.carousel-control-prev{
+  margin: 20% 2%;
+  width: 5%;
+  background: linear-gradient(to left, rgba(255,0,0,0.1), rgba(0,0,0,0.8));
+}
+
+.carousel-control-next{
+  margin: 20% 2%;
+  width: 5%;
+  background: linear-gradient(to right, rgba(255,0,0,0.1), rgba(0,0,0,0.8));
+}
+
+.carousel-indicators{
+  margin: auto;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.8));
+}
+
+.carousel-indicators .active{
+  width: 7%;
+  background-color: crimson;
+}
+/* Left Slide Picture */
+.pic-1{
+  z-index: 10;
+  position: absolute;
+  top: 50px;
+  left: 225px;
+  height: 50%;
+  width: 30%;
+}
+
+/* Pathetic Shitters Slide */
+.PS-Slide {
+  position: relative;
+  animation: mymove 5s;
+}
+.PS-Left {
+  background: url("../images/alo_bg.png");
+  display: inline-block;
+}
+.PS-Left p {
+  z-index: 10;
+  position: absolute;
+  top: 350px;
+  left: 150px;
+  font-size: 70px;
+  font-weight: 700;
+  font-family: "Condiment",cursive;
+  text-align: center;
+  color: red;
+}
+/* Solid Pushers Slide */
+.SP-BG{
+  background: url("../images/SP_bg.png") center no-repeat;
+}
+.SP-Slide {
+  position: relative;
+  animation: mymove 5s;
+}
+.SP-Left {
+  background: url("../images/SP_bg.png") center no-repeat;
+}
+
+.SP-Left p {
+  z-index: 10;
+  position: absolute;
+  top: 350px;
+  left: 165px;
+  color: powderblue;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Condiment",cursive;
+  text-align: center;
+}
+/* Idle Spirits */
+.IS-BG{
+  background: url("../images/IS_bg1.png") center;
+}
+.IS-Slide {
+  position: relative;
+  animation: mymove 5s;
+}
+.IS-Left {
+  background: url("../images/IS_bg2.png") center;
+}
+
+.IS-Left p {
+  z-index: 10;
+  position: absolute;
+  top: 380px;
+  left: 100px;
+  color: green;
+  font-size: 70px;
+  font-weight: 700;
+  font-family: "Condiment",cursive;
+  text-align: center;
+}
+
+/* 150 BLOWERS */
+
+.B-BG{
+  background: url("../images/150B_bg2.png") center;
+}
+
+.B-Slide {
+  position: relative;
+  animation: mymove 5s;
+}
+.B-Left {
+  display: inline-block;
+  background: url("../images/150B_bg1.png") center no-repeat;
+}
+.B-Left p {
+  z-index: 10;
+  position: absolute;
+  top: 375px;
+  left: 250px;
+  color: gold;
+  font-size: 70px;
+  font-weight: 700;
+  font-family: "Condiment",cursive;
+  text-align: center;
+}
+
+/* ANIMATION */
+@keyframes mymove {
+from {right: 15px;}
+to {right: 40px;}
+}
+
+@media (max-width:1519px) {
+  .pic-1{
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    left: 190px;
+    height: 50%;
+    width: 30%;
+  }
+  /* Pathetic Shitters Slide */
+
+  .PS-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 310px;
+    left: 170px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+  /* Solid Pushers Slide */
+
+  .SP-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 300px;
+    left: 160px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+  /* Idle Spirits */
+
+  .IS-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 320px;
+    left: 140px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+
+  /* 150 BLOWERS */
+
+  .B-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 310px;
+    left: 200px;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+}
+
+@media (max-width:1215px) {
+  .pic-1{
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    left: 160px;
+    height: 50%;
+    width: 30%;
+  }
+  /* Pathetic Shitters Slide */
+
+  .PS-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 260px;
+    left: 150px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+  /* Solid Pushers Slide */
+
+  .SP-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 260px;
+    left: 140px;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+  /* Idle Spirits */
+
+  .IS-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 280px;
+    left: 140px;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+
+  /* 150 BLOWERS */
+
+  .B-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 270px;
+    left: 170px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+}
+
+@media (max-width:1013px) {
+  .pic-1{
+    z-index: 10;
+    position: absolute;
+    top: 30px;
+    left: 113px;
+    height: 50%;
+    width: 30%;
+  }
+  /* Pathetic Shitters Slide */
+
+  .PS-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 180px;
+    left: 100px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+  /* Solid Pushers Slide */
+
+  .SP-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 180px;
+    left: 85px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+  /* Idle Spirits */
+
+  .IS-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 180px;
+    left: 80px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+
+  /* 150 BLOWERS */
+
+  .B-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 190px;
+    left: 140px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+}
+
+@media (max-width:760px) {
+  .pic-1{
+    z-index: 10;
+    position: absolute;
+    top: 30px;
+    left: 113px;
+    height: 50%;
+    width: 30%;
+    visibility: hidden;
+  }
+  /* Pathetic Shitters Slide */
+
+  .PS-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+  /* Solid Pushers Slide */
+
+  .SP-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    left: 280px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+  /* Idle Spirits */
+
+  .IS-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    left: 280px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+
+  /* 150 BLOWERS */
+
+  .B-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+}
+
+@media (max-width:506px) {
+  .pic-1{
+    z-index: 10;
+    position: absolute;
+    top: 30px;
+    left: 113px;
+    height: 50%;
+    width: 30%;
+    visibility: hidden;
+  }
+  /* Pathetic Shitters Slide */
+
+  .PS-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+  /* Solid Pushers Slide */
+
+  .SP-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    left: 280px;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+  /* Idle Spirits */
+
+  .IS-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    left: 170px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+
+  /* 150 BLOWERS */
+
+  .B-Left p {
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Condiment",cursive;
+    text-align: center;
+  }
+}
+
+@media (min-width:1536px) {
+  /* Carousel Buttons */
+  /* .carousel-control-prev{
+    position: relative;
+    top: -600px;
+    left: -100px;
+    margin: 20% 20%;
+    width: 10%;
+    background: linear-gradient(to left, rgba(255,0,0,0.1), rgba(0,0,0,0.8));
+  }
+
+  .carousel-control-next{
+    border: 1px solid blue;
+    margin: 20% 2%;
+    width: 5%;
+    background: linear-gradient(to right, rgba(255,0,0,0.1), rgba(0,0,0,0.8));
+  }
+
+} */
